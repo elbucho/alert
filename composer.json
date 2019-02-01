@@ -1,0 +1,38 @@
+{
+  "name": "elbucho/alert",
+  "description": "Provides a trait that will output to a symfony OutputInterface and a MonoLog logging interface",
+  "keywords": ["alert","symfony","monolog","output"],
+  "type": "library",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael Hinkson",
+      "email": "mjhinkson@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "symfony/symfony": ">=3.4",
+    "monolog/monolog": "1.x-dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.2",
+    "phpunit/php-code-coverage": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Elbucho\\Alert\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Elbucho\\Alert\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
